@@ -11,8 +11,8 @@ if (email === '' || email === null) {
     let password = prompt('Enter your password', '');
     if (password === '' || password === null) {
         alert('Canceled')
-    } else if (email === 'user@gmail.com' && password !== 'UserPass' || 
-                email === 'admin@gmail.com' && password !== 'RootPass') {
+    } else if (email.toLowerCase() === 'user@gmail.com' && password !== 'UserPass' || 
+                email.toLowerCase() === 'admin@gmail.com' && password !== 'RootPass') {
         alert('Wrong password')
     } else {
         let change = confirm('Do you want to change your password?');
@@ -22,8 +22,8 @@ if (email === '' || email === null) {
             let oldPass = prompt('Old password', '');
             if (oldPass === '' || oldPass === null) {
                 alert('Canceled')
-            } else if (email === 'user@gmail.com' && oldPass !== 'UserPass' || 
-                        email === 'admin@gmail.com' && oldPass !== 'RootPass') {
+            } else if (email.toLowerCase() === 'user@gmail.com' && oldPass !== 'UserPass' || 
+                        email.toLowerCase() === 'admin@gmail.com' && oldPass !== 'RootPass') {
                 alert('Wrong password')
             } else {
                 let newPass = prompt('Enter new password', '');
