@@ -92,7 +92,7 @@ function canConvertToDate(str) {
 
 function daysBetween(date1, date2) {
     const msInDay = 86400000;
-    return Math.round((+date2 - +date1) / msInDay)
+    return Math.round((Date.parse(date2) - Date.parse(date1)) / msInDay)
 }
 
 function getAmountOfAdultPeople (arr) {
